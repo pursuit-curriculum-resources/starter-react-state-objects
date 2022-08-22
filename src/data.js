@@ -1,4 +1,4 @@
-export default [
+export const dogsData = [
   {
     id: 46,
     name: "Mitsy",
