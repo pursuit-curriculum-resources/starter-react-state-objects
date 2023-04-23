@@ -2,13 +2,14 @@ import { useState } from "react";
 import React from "react";
 import { dogsData } from "./data";
 import DogDetails from "./DogDetails";
+import { v1 as generateUniqueID } from "uuid";
 
 function App() {
   const [dogs, setDogs] = useState(dogsData);
 
   function addDog() {
     const rover = {
-      id: dogs.length + 50,
+      id: generateUniqueID(),
       name: "Rover",
       present: false,
       grade: "100",
